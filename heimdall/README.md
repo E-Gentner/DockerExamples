@@ -6,8 +6,11 @@ I find it very useful for accessing different containers without having to remem
 &nbsp;
 &nbsp;
 &nbsp;
-/n
+
 ### Using docker CLI to run the container
+&nbsp;
+
+```
 docker run -d \
   --name=heimdall \
   -e PUID=1000 \
@@ -17,5 +20,5 @@ docker run -d \
   -v /home/pibox/DockerExamples/configs/heimdall/config:/config \
   --restart unless-stopped \
   lscr.io/linuxserver/heimdall:latest
-
+```
 
