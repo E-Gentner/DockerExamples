@@ -1,0 +1,14 @@
+version: '2.1'
+services:
+  heimdall:
+    image: lscr.io/linuxserver/heimdall:latest
+    container_name: heimdall
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/New_York
+    volumes:
+      - /home/pibox/DockerExamples/configs/heimdall/config:/config
+    ports:
+      - 8090:80
+    restart: unless-stopped
