@@ -10,5 +10,5 @@ services:
     volumes:
       - /home/pibox/DockerExamples/configs/heimdall/config:/config
     ports:
-      - 8090:80
+      - 80:80
     restart: unless-stopped
